@@ -1,139 +1,184 @@
-<!DOCTYPE html><html lang="hi">
+<!DOCTYPE html>
+<html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Radhe Krishna Travels | प्रीमियम टूरिस्ट बस सेवा</title>
-  <meta name="description" content="Radhe Krishna Travels – Premium AC / Non-AC Tourist Bus Service for All India Tours, Wedding, School & Corporate Trips.">  <!-- Google Font -->  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">  <style>
-    *{box-sizing:border-box}
-    body{margin:0;font-family:'Montserrat',sans-serif;background:#f8fafc;color:#1f2937}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radhe Krishna Travels | Premium Travel Service</title>
 
-    /* ===== COLOR THEME =====
-       Premium White + Royal Blue + Gold
-    */
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    /* NAV */
-    nav{position:fixed;top:0;width:100%;background:#0b1f3a;padding:16px;text-align:center;z-index:100;box-shadow:0 6px 20px rgba(0,0,0,.15)}
-    nav a{color:#f8fafc;margin:0 18px;text-decoration:none;font-weight:500}
-    nav a:hover{color:#f5c542}
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:'Montserrat',sans-serif;background:#f8fafc;color:#1f2937}
 
-    /* HERO */
-    .hero{min-height:100vh;background:linear-gradient(120deg,rgba(11,31,58,.85),rgba(11,31,58,.85)),url('https://images.unsplash.com/photo-1503376780353-7e6692767b70') center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px}
-    .hero-content{max-width:900px;color:#fff}
-    .hero h1{font-size:54px;font-weight:700;letter-spacing:1px;margin-bottom:20px}
-    .hero p{font-size:20px;color:#e5e7eb;margin-bottom:40px}
+nav{
+  position:fixed;top:0;width:100%;
+  background:#0b1f3a;padding:15px;text-align:center;z-index:100
+}
+nav a{color:#fff;margin:0 15px;text-decoration:none}
+nav a:hover{color:#f5c542}
 
-    .btn{display:inline-block;padding:15px 36px;border-radius:50px;text-decoration:none;font-weight:600;margin:8px;transition:.3s}
-    .btn.primary{background:linear-gradient(135deg,#f5c542,#d4a017);color:#000}
-    .btn.primary:hover{transform:translateY(-2px)}
-    .btn.secondary{border:2px solid #f5c542;color:#f5c542}
+.hero{
+  min-height:100vh;
+  background:linear-gradient(rgba(11,31,58,.85),rgba(11,31,58,.85)),
+  url('https://images.unsplash.com/photo-1503376780353-7e6692767b70') center/cover no-repeat;
+  display:flex;align-items:center;justify-content:center;text-align:center;
+}
+.hero h1{color:#fff;font-size:48px}
+.hero p{color:#e5e7eb;font-size:18px}
 
-    section{max-width:1200px;margin:120px auto;padding:0 20px}
-    h2{text-align:center;font-size:36px;color:#0b1f3a;margin-bottom:50px}
+.btn{
+  padding:14px 32px;border-radius:50px;
+  text-decoration:none;font-weight:600;margin:8px;display:inline-block
+}
+.primary{background:linear-gradient(135deg,#f5c542,#d4a017);color:#000}
+.secondary{border:2px solid #f5c542;color:#f5c542}
 
-    /* ABOUT */
-    .about p{text-align:center;max-width:900px;margin:auto;font-size:18px;color:#374151}
+section{max-width:1200px;margin:110px auto;padding:0 20px}
+h2{text-align:center;color:#0b1f3a;margin-bottom:40px}
 
-    /* SERVICES */
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px}
-    .card{background:#ffffff;border-radius:18px;padding:35px;text-align:center;transition:.3s;box-shadow:0 12px 30px rgba(0,0,0,.08)}
-    .card:hover{transform:translateY(-6px)}
-    .card h3{color:#0b1f3a;margin-bottom:15px}
-    .card p{color:#4b5563}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px
+}
+.card{
+  background:#fff;border-radius:16px;padding:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+  text-align:center
+}
+.card img{width:100%;border-radius:12px}
 
-    /* ROUTES */
-    .routes{background:#0b1f3a;border-radius:22px;padding:60px;text-align:center;color:#f8fafc}
-    .routes p{font-size:20px}
+.toggle{
+  text-align:center;margin-bottom:30px
+}
+.toggle button{
+  padding:12px 25px;border-radius:30px;
+  border:none;margin:5px;font-weight:600;cursor:pointer
+}
 
-    /* CONTACT */
-    .contact-box{display:grid;grid-template-columns:1fr 1fr;gap:50px}
-    .contact-box p{font-size:18px}
-    form input,form textarea{width:100%;padding:15px;border-radius:10px;border:1px solid #d1d5db;background:#fff;color:#111827;margin-bottom:16px}
-    form button{background:linear-gradient(135deg,#f5c542,#d4a017);color:#000;border:none;padding:15px;border-radius:50px;font-size:16px;font-weight:600}
+.routes{
+  background:#0b1f3a;color:#fff;
+  padding:50px;border-radius:20px;text-align:center
+}
 
-    iframe{width:100%;height:300px;border:0;border-radius:18px}
+.contact-box{
+  display:grid;grid-template-columns:1fr 1fr;gap:40px
+}
+input,textarea{
+  width:100%;padding:14px;margin-bottom:15px;
+  border-radius:10px;border:1px solid #ccc
+}
+button.submit{
+  background:linear-gradient(135deg,#f5c542,#d4a017);
+  border:none;padding:14px;border-radius:50px;font-weight:600
+}
 
-    footer{background:#0b1f3a;color:#f8fafc;text-align:center;padding:30px;margin-top:80px}
+iframe{width:100%;height:280px;border:0;border-radius:16px}
 
-    @media(max-width:768px){
-      .hero h1{font-size:36px}
-      .contact-box{grid-template-columns:1fr}
-      section{margin:90px auto}
-    }
-  </style></head>
-<body><nav>
+footer{
+  background:#0b1f3a;color:#fff;text-align:center;
+  padding:25px;margin-top:70px
+}
+
+@media(max-width:768px){
+  .contact-box{grid-template-columns:1fr}
+  .hero h1{font-size:34px}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
   <a href="#home">होम</a>
-  <a href="#about">हमारे बारे में</a>
+  <a href="#gallery">Gallery</a>
   <a href="#services">सेवाएं</a>
-  <a href="#routes">रूट</a>
   <a href="#contact">संपर्क</a>
-</nav><div class="hero" id="home">
-  <div class="hero-content">
+</nav>
+
+<div class="hero" id="home">
+  <div>
     <h1>Radhe Krishna Travels</h1>
-    <p>पूरे भारत में प्रीमियम एसी / नॉन-एसी टूरिस्ट बस सेवा</p>
-    <a class="btn primary" href="https://wa.me/917024497405">WhatsApp Enquiry</a>
-    <a class="btn secondary" href="tel:7024497405">Call Now</a>
+    <p>Premium Car & Bus Travel Service</p>
+    <a class="btn primary" href="https://wa.me/917024497405">WhatsApp</a>
+    <a class="btn secondary" href="tel:7024497405">Call</a>
   </div>
-</div><section id="about" class="about">
-  <h2>हमारे बारे में</h2>
-  <p>
-    Radhe Krishna Travels एक प्रीमियम टूरिस्ट बस सेवा प्रदाता है, जो पूरे भारत में सुरक्षित, आरामदायक और भरोसेमंद यात्रा अनुभव प्रदान करता है। हम फैमिली टूर, शादी, स्कूल एवं कॉर्पोरेट ट्रिप के लिए उच्च गुणवत्ता की बस सेवाएं उपलब्ध कराते हैं।
-  </p>
-</section><section id="gallery">
-  <h2>Bus Gallery</h2>
-  <div class="grid">
-    <div class="card"><img src="https://images.unsplash.com/photo-1502877338535-766e1452684a" style="width:100%;border-radius:14px"><p>Luxury Tourist Bus</p></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df" style="width:100%;border-radius:14px"><p>Premium Interior</p></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1542362567-b07e54358753" style="width:100%;border-radius:14px"><p>Comfort Travel</p></div>
-  </div>
-</section><section id="gallery">
-  <h2>Bus Gallery</h2>
-  <div class="grid">
-    <div class="card"><img src="https://images.unsplash.com/photo-1502877338535-766e1452684a" style="width:100%;border-radius:14px"><p>Luxury Tourist Bus</p></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df" style="width:100%;border-radius:14px"><p>Premium Interior</p></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1542362567-b07e54358753" style="width:100%;border-radius:14px"><p
-  <h2>प्रीमियम सेवाएं</h2>
-  <div class="grid">
-    <div class="card"><h3>लक्ज़री टूरिस्ट बस</h3><p>लंबी दूरी की यात्रा के लिए एसी / नॉन-एसी बसें।</p></div>
-    <div class="card"><h3>आउटस्टेशन टूर</h3><p>पूरे भारत के लिए पेशेवर ड्राइवरों के साथ सेवा।</p></div>
-    <div class="card"><h3>शादी व इवेंट ट्रिप</h3><p>शादी और विशेष अवसरों के लिए प्रीमियम ट्रांसपोर्ट।</p></div>
-    <div class="card"><h3>स्कूल व कॉर्पोरेट</h3><p>सुरक्षित, समय पर और व्यवस्थित ग्रुप ट्रैवल।</p></div>
-  </div>
-</section><section id="routes">
-  <h2>लोकप्रिय रूट</h2>
-  <div class="routes">
-    <p>इंदौर – उज्जैन – ओंकारेश्वर</p>
-    <p>इंदौर – मांडू – महेश्वर</p>
-    <p>कस्टम ऑल इंडिया टूर पैकेज उपलब्ध</p>
-  </div>
-</section><section id="contact">
-  <h2>संपर्क करें</h2>
-  <div class="contact-box">
-    <div>
-      <p><b>मोबाइल:</b> 7024497405</p>
-      <p><b>पता:</b> गांधी नगर एयरपोर्ट, इंदौर</p>
-      <iframe src="https://www.google.com/maps?q=Gandhi%20Nagar%20Airport%20Indore&output=embed"></iframe>
-    </div>
-    <form onsubmit="sendWhatsApp(event)">
-      <input type="text" placeholder="आपका नाम" required>
-      <input type="tel" placeholder="मोबाइल नंबर" required>
-      <textarea rows="5" placeholder="यात्रा विवरण"></textarea>
-      <button type="submit">जानकारी भेजें</button>
-    </form>
-  </div>
-</section><section id="testimonials">
-  <h2>ग्राहकों की राय</h2>
-  <div class="grid">
-    <div class="card"><p>⭐⭐⭐⭐⭐</p><p>बस बहुत ही साफ और आरामदायक थी। समय पर यात्रा पूरी हुई।</p><b>- शर्मा परिवार</b></div>
-    <div class="card"><p>⭐⭐⭐⭐⭐</p><p>शादी के लिए बुक की थी, सर्विस शानदार रही।</p><b>- वर्मा जी</b></div>
-    <div class="card"><p>⭐⭐⭐⭐⭐</p><p>कॉर्पोरेट ट्रिप के लिए best travel service।</p><b>- ABC Company</b></div>
-  </div>
-</section><section id="cta">
-  <div class="routes">
-    <h2>आज ही अपनी यात्रा बुक करें</h2>
-    <p>लक्ज़री बस | अनुभवी ड्राइवर | भरोसेमंद सेवा</p>
-    <a class="btn primary" href="https://wa.me/917024497405">WhatsApp पर बुक करें</a>
-  </div>
-</section><footer>
-  <p>© 2026 Radhe Krishna Travels | प्रीमियम टूरिस्ट बस सेवा</p>
-</footer></body>
+</div>
+
+<section id="gallery">
+<h2>Our Vehicles</h2>
+
+<div class="toggle">
+  <button onclick="showCars()">🚗 Cars</button>
+  <button onclick="showBuses()">🚌 Buses</button>
+</div>
+
+<div class="grid" id="cars">
+  <div class="card"><img src="https://images.unsplash.com/photo-1549924231-f129b911e442"><p>Luxury Sedan</p></div>
+  <div class="card"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"><p>Premium SUV</p></div>
+  <div class="card"><img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2"><p>Family Car</p></div>
+</div>
+
+<div class="grid" id="buses" style="display:none">
+  <div class="card"><img src="https://images.unsplash.com/photo-1502877338535-766e1452684a"><p>Luxury Bus</p></div>
+  <div class="card"><img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df"><p>AC Tourist Bus</p></div>
+  <div class="card"><img src="https://images.unsplash.com/photo-1542362567-b07e54358753"><p>Comfort Bus</p></div>
+</div>
+</section>
+
+<section id="services">
+<h2>हमारी सेवाएं</h2>
+<div class="grid">
+  <div class="card">शादी & इवेंट ट्रैवल</div>
+  <div class="card">आउटस्टेशन टूर</div>
+  <div class="card">कॉर्पोरेट ट्रिप</div>
+  <div class="card">फैमिली टूर</div>
+</div>
+</section>
+
+<section id="contact">
+<h2>संपर्क करें</h2>
+<div class="contact-box">
+<div>
+<p><b>मोबाइल:</b> 7024497405</p>
+<p><b>पता:</b> गांधी नगर एयरपोर्ट, इंदौर</p>
+<iframe src="https://www.google.com/maps?q=Gandhi%20Nagar%20Airport%20Indore&output=embed"></iframe>
+</div>
+
+<form onsubmit="sendWhatsApp(event)">
+<input id="name" placeholder="आपका नाम" required>
+<input id="phone" placeholder="मोबाइल नंबर" required>
+<textarea id="msg" placeholder="यात्रा विवरण"></textarea>
+<button class="submit">WhatsApp भेजें</button>
+</form>
+</div>
+</section>
+
+<footer>
+© 2026 Radhe Krishna Travels
+</footer>
+
+<script>
+function sendWhatsApp(e){
+  e.preventDefault();
+  let name=document.getElementById("name").value;
+  let phone=document.getElementById("phone").value;
+  let msg=document.getElementById("msg").value;
+
+  let text=`नमस्ते,%0Aनाम: ${name}%0Aमोबाइल: ${phone}%0Aयात्रा: ${msg}`;
+  window.open("https://wa.me/917024497405?text="+text,"_blank");
+}
+
+function showCars(){
+  document.getElementById("cars").style.display="grid";
+  document.getElementById("buses").style.display="none";
+}
+function showBuses(){
+  document.getElementById("cars").style.display="none";
+  document.getElementById("buses").style.display="grid";
+}
+</script>
+
+</body>
 </html>
